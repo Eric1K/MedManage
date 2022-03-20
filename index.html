@@ -1,0 +1,252 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>MedManage</title>
+        <meta name="description" content="A simple HTML5 Template for new projects.">
+        <meta name="Eric Feng" content="SitePoint">
+
+        <meta property="og:title" content="MedManage">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+        <meta property="og:description" content="A simple HTML5 Template for new projects.">
+
+        <link rel="icon" href="justlogo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+
+        <script src="scripts/dropdown.js" ></script>
+        <script src="scripts/search.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <div class = "navbar-item">
+              <a class="navbar-item" href=" ">
+                <img src="banner.png">
+              </a>
+                
+              </div>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            <div class="navbar-menu" id="navMenu">
+           
+    
+              <div class="navbar-start">
+                
+              </div>
+    
+             
+             <div class="navbar-end">
+               <div class = "navbar-item">
+                  <a href = "./" class="navbar-item">
+                  Home
+                </a>
+    
+                <a href = "./help" class="navbar-item">
+                  Help
+                </a>
+                
+                <a href = "" class="navbar-item">
+                    Log out
+                </a>
+                
+
+               </div>
+             
+              </div>
+            </div>
+    
+             <script src="scripts/burger.js" defer></script>
+          </nav>
+
+          <section>
+            <div class="section main hero is-medium">
+                
+
+
+                <h1 id = "greeting" class = "has-text-centered title is-title is-size-1 has-text-weight-bold has-text-black ">Hello, Eric</h1>
+                <script src="scripts/greeting.js" defer></script>
+                <br>
+                <nav class="level">
+                    
+                      <div class="level-item">
+                        <div class="field has-addons">
+                          <p class="control">
+                            <input size ="100" id = "search" class="input" type="text" placeholder="What are you looking for today?">
+                          </p>
+                          <p class="control">
+                            <button class="button" onclick = "search()">
+                              Search
+                            </button>
+                            <script>addSearchListener()</script>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <br>
+        <section class = "management">
+            <nav class="container box" role="navigation" aria-label="main navigation">
+
+                   
+                    
+                  </div>
+                  <a role="button" class="personalhealth" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                     <div class = "has-text-centered">
+                        Personal Health
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="navbar-menu has-text-centered" id="healthMenu">
+               
+                    
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Name">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Age">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Weight">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Height">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Allergies">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Medical Information">  
+                    </div>
+                </div>
+        
+                 <script src="scripts/healthdropdown.js" defer></script>
+              </nav>
+
+
+        
+            <nav class="container box" role="navigation" aria-label="main navigation">
+
+                   
+                    
+                  </div>
+                  <a role="button" class="insurance" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                     <div class = "has-text-centered">
+                        Insurance
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="navbar-menu has-text-centered" id="insuranceMenu">
+               
+                    
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Insurance Providers">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Age">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Weight">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Height">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Allergies">  
+                    </div>
+                    <div class="has-text-centered">
+                        <input size ="1000"class="input" type="text" placeholder="Medical Information">  
+                    </div>
+                </div>
+        
+                 <script src="scripts/insurance.js" defer></script>
+              </nav>
+
+              <nav class="container box" role="navigation" aria-label="main navigation">
+
+                   
+                    
+            </div>
+            <a role="button" class="records" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+               <div class = "has-text-centered">
+                  Medical Records & Other Files
+              </div>
+            </a>
+          </div>
+          
+          <div class="navbar-menu" id="recordMenu">
+         
+            <div class="file is-boxed" style = "width:400px;">
+                <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                        Choose a file…
+                    </span>
+                    </span>
+                </label>
+                </div>
+            </div>
+           
+  
+           <script src="scripts/records.js" defer></script>
+            </nav>
+
+        </section>
+
+        <section id="footer">
+            <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <br>
+                <br>
+                Prototype created by team Garnet Valley for <a href="https://pennapps.com">PennApps</a>
+              </p>
+            </div>
+            </footer>
+            
+          </section>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

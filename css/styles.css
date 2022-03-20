@@ -1,0 +1,27 @@
+a.navbar-item:hover{
+    color:#2C6BED;
+}
+
+a.navbar-item:hover{
+    background-color:inherit;
+    text-decoration:none;
+}
+
+.main{
+    background-color:#ffd9d9
+}
+
+a{
+    color:inherit;
+}
+
+a:hover{
+    color:#2C6BED;
+}
+
+.file{
+    position:relative;
+    margin-left: auto;
+    left:100px;
+    margin-right: auto;
+}
